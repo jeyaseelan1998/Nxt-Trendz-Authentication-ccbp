@@ -1,1 +1,76 @@
 /* Write your CSS code here */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links-lg {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-sm {
+  display: none;
+}
+
+.nav-logout-img {
+  width: 25px;
+}
+
+.nav-icons {
+  background-color:  #e6f6ff;
+  width: 100%;
+  display: none;
+}
+
+.nav-icon-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links-lg {
+    display: none;
+  }
+  .button-sm {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.logout-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0b69ff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
